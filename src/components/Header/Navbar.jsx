@@ -46,9 +46,10 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                      : "block py-2 pl-3 pr-4 text-white"
-                  }>
+                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700  md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                      : "block py-2 pl-3 pr-4 text-black"
+                  }
+                >
                   {/* className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                   aria-current="page"
                   > */}
@@ -56,19 +57,21 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li></li>
-              <li>
+
+              {/*    <li>
                 <NavLink
-                  to="/phones"
+                  to="/phones/:id"
                   className={({ isActive, isPending }) =>
                     isPending
                       ? "pending"
                       : isActive
                       ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                      : "block py-2 pl-3 pr-4 text-white"
-                  }>
-                  Phones
+                      : "block py-2 pl-3 pr-4 text-black"
+                  }
+                >
+                  Phone
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/favorites"
@@ -76,9 +79,10 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                      : "block py-2 pl-3 pr-4 text-white"
-                  }>
+                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700  md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                      : "block py-2 pl-3 pr-4 text-black"
+                  }
+                >
                   Favorites
                 </NavLink>
               </li>
@@ -89,9 +93,10 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                      : "block py-2 pl-3 pr-4 text-white"
-                  }>
+                      ? "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700  md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                      : "block py-2 pl-3 pr-4 text-black"
+                  }
+                >
                   Login
                 </NavLink>
               </li>

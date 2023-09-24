@@ -4,6 +4,8 @@ import MainLayout from "../MainLayout/MainLayout";
 import Favorites from "../../pages/Favorites/Favorites";
 import Login from "../../pages/Login/Login";
 
+import Phone from "./../../pages/Phone/Phone";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,7 +14,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("phones.json"),
+        loader: () => fetch("/phones.json"),
       },
 
       {
@@ -22,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/phones/:id",
+        element: <Phone />,
+        loader: () => fetch("/phones.json"),
       },
     ],
   },
